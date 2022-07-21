@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Deploying an app with Ansible</title>
+<head></head>
+<body>
+    <h2>Greetings</h2>
+    <form method="post">
+        <h3>Add a new greeting</h3>
+        <input type="text" name="greeting" />
+        <br>
+        <input type="submit" value="Add Greeting" />
+    </form>
+    {% for greeting in greetings %}
+        <p>{{ greeting.message }}</p>
+    {% endfor %}
+</body>
+</html>
